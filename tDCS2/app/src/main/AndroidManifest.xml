@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.tdcs2">
+
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/icon"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".finishActivity" />
+        <activity
+            android:name=".Instruction_screen"
+            android:label="@string/hardware_setup_name"
+            android:parentActivityName=".Home_screen" />
+        <activity
+            android:name=".Home_screen"
+            android:label="@string/disclaimer" />
+        <activity
+            android:name=".Timer_screen"
+            android:label="@string/stimulating"
+            android:parentActivityName=".Select_stim" />
+        <activity
+            android:name=".splashscreen"
+            android:noHistory="true"
+            android:theme="@style/SplashTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Select_stim"
+            android:label="@string/stim_setup"
+            android:parentActivityName=".Home_screen" />
+    </application>
+
+</manifest>

@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">MindFoster</string>
+    <string name="hardware_setup_name">Hardware Setup</string>
+    <string name="stim_setup">Stimulation Configuration</string>
+    <string name="disclaimer">Mind Foaster</string>
+    <string name="stimulating">Stimulating</string>
+    <string-array name="stimulation">
+        <item>-- Select --</item>
+        <item>0.5 mA</item>
+        <item>1 mA</item>
+        <item>1.5 mA</item>
+        <item>2 mA</item>
+    </string-array>
+
+    <string-array name="timer">
+        <item>-- Select --</item>
+        <item>10 Minutes</item>
+        <item>20 Minutes</item>
+        <item>30 Minutes</item>
+    </string-array>
+</resources>

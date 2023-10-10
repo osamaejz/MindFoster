@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/blue_purple_back"
+    tools:context=".Home_screen">
+
+    <TextView
+        android:id="@+id/disclaimer_content"
+        android:layout_width="294dp"
+        android:layout_height="226dp"
+        android:gravity="center_horizontal"
+        android:justificationMode="inter_word"
+        android:text="Mind Foster is an effective solution developed at Neurocomputation Lab, National Center of Artificial Intelligence to cope with depression and enhance cognitive capabilities. It uses constant and low direct current delivered via two electrodes placed on the head. Mind Foster is a completely non-invasive and harmless solution."
+        android:textColor="@color/colorText"
+        android:textSize="19sp"
+        app:layout_constraintBottom_toTopOf="@+id/imageView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.521"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <Button
+        android:id="@+id/stimulation_setup"
+        android:layout_width="119dp"
+        android:layout_height="59dp"
+        android:layout_marginBottom="24dp"
+        android:background="#71B46CFF"
+        android:text="Go for\n stimulation"
+        android:textColor="@color/colorText"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.578"
+        app:layout_constraintStart_toEndOf="@+id/hardware_setup" />
+
+    <Button
+        android:id="@+id/hardware_setup"
+        android:layout_width="119dp"
+        android:layout_height="59dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginBottom="24dp"
+        android:background="#71B46CFF"
+        android:text="hardware\n setup"
+        android:textColor="@color/colorText"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="248dp"
+        android:layout_height="200dp"
+        android:layout_marginBottom="56dp"
+        app:layout_constraintBottom_toTopOf="@+id/stimulation_setup"
+        app:layout_constraintEnd_toEndOf="@+id/disclaimer_content"
+        app:layout_constraintStart_toStartOf="@+id/disclaimer_content"
+        app:srcCompat="@drawable/tdcs_image__home_page" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
